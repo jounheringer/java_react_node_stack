@@ -1,0 +1,11 @@
+{
+  "name": "gateway",
+  "version": "1.0.0",
+  "description": "Node js test as a gateway",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "reringuy",
+  "license": "ISC"
+}
