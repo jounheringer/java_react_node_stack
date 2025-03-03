@@ -1,0 +1,21 @@
+[versions]
+spring-boot = "3.4.3"
+spring-dependency = "1.1.7"
+postgresql = "42.7.2"
+security-test = "6.4.3"
+lombok = "1.18.36"
+junit = "1.12.0"
+
+[libraries]
+spring-boot-jpa = { module = "org.springframework.boot:spring-boot-starter-data-jpa", version.ref = "spring-boot" }
+spring-boot-security = { module = "org.springframework.boot:spring-boot-starter-security", version.ref = "spring-boot" }
+spring-boot-security-test = { module = "org.springframework.security:spring-security-test", version.ref = "security-test" }
+spring-boot-web = { module = "org.springframework.boot:spring-boot-starter-web", version.ref = "spring-boot" }
+spring-boot-test = { module = "org.springframework.boot:spring-boot-starter-test", version.ref = "spring-boot" }
+lombok = { module = "org.projectlombok:lombok", version.ref = "lombok" }
+junit = { module = "org.junit.platform:junit-platform-launcher", version.ref = "junit" }
+portgresql = { module = "org.postgresql:postgresql", version.ref = "postgresql" }
+
+[plugins]
+spring-boot = { id = "org.springframework.boot", version.ref = "spring-boot"}
+spring-dependency = { id = "io.spring.dependency-management", version.ref = "spring-dependency" }
