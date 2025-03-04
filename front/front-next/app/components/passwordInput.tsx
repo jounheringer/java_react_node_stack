@@ -14,16 +14,16 @@ export default function PasswordInput(props: PasswordProp) {
             <label htmlFor="password">
                 Senha
             </label>
-            <div className="flex flex-row">
+            <div className="flex flex-row items-center border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none">
                 <input
                     id="password"
                     type={showPassword ? "text" : "password"}
                     value={props.value}
                     onChange={(value) => props.onValueChange(value.target.value)}
                     placeholder="123456"
-                    className="pl-4 pr-10 py-2 border border-gray-300 rounded-md w-full focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                    className="pl-4 py-2 w-full"
                 />
-                <div className={"cursor-pointer"} onClick={ () => setShowPassword(!showPassword)} >
+                <div className={"cursor-pointer px-4"} onClick={ () => setShowPassword(!showPassword)} >
                     { showPassword ? <Eye className={"cursor-pointer"}/> : <EyeClosed /> }
                 </div>
             </div>

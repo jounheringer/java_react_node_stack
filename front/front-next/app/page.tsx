@@ -7,11 +7,13 @@ import PasswordInput from "@/app/components/passwordInput";
 export default function Home() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+
   return (
-    <div className={"flex items-center justify-center h-screen w-40"}>
+    <div className={"flex flex-col items-center justify-center h-screen w-screen"}>
       <form className={"flex flex-col"}>
-        <label>Usuario</label>
+        <label htmlFor={"username"}>Usuario</label>
         <input
+            id={"username"}
             value={username}
             onChange={(value) => setUsername(value.target.value)}
             className="pl-4 pr-10 py-2 border border-gray-300 rounded-md w-full focus:ring-2 focus:ring-blue-500 focus:outline-none"
@@ -26,8 +28,9 @@ export default function Home() {
           Entrar
         </button>
 
-        <Link href={""}>test</Link>
       </form>
+
+      <Link href={""} className={"flex py-5"}>test</Link>
     </div>
   );
 }
