@@ -31,8 +31,11 @@ dependencies {
     annotationProcessor(libs.lombok)
     testImplementation(libs.spring.boot.test)
     testImplementation(libs.spring.boot.security.test)
+    developmentOnly(libs.spring.boot.devtool)
     testRuntimeOnly(libs.junit)
     implementation(libs.portgresql)
+    implementation(libs.model.mapper)
+    implementation(libs.jwt)
 }
 
 tasks.withType<Test> {
