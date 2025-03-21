@@ -10,7 +10,7 @@ export default function PasswordInput(props: PasswordProp) {
     const [showPassword, setShowPassword] = useState(false);
 
     return (
-        <div className="flex flex-col space-y-2">
+        <div className="flex flex-col my-2">
             <label htmlFor="password">
                 Senha
             </label>
