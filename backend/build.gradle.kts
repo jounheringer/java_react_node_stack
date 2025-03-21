@@ -36,6 +36,7 @@ dependencies {
     implementation(libs.portgresql)
     implementation(libs.model.mapper)
     implementation(libs.jwt)
+    implementation(libs.swagger)
 }
 
 tasks.withType<Test> {
