@@ -1,8 +1,9 @@
 "use client"
 
-import { useRouter } from 'next/navigation';
+import {useRouter} from 'next/navigation';
 import {useState} from "react";
-import PasswordInput from "@/app/components/passwordInput";
+import PasswordInput from "@/components/passwordInput";
+import {Button} from "@/components/ui/button";
 
 export default function Home() {
     const router = useRouter();
@@ -32,13 +33,12 @@ export default function Home() {
                     onValueChange={(value) => setPassword(value)}
                 />
 
-                <button
-                    onClick={handleLogin}
-                    className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded my-4"
+                <Button onClick={handleLogin}
+                        variant="default"
+                        className="bg-primary"
                 >
                     Entrar
-                </button>
-
+                </Button>
             </form>
         </div>
     );
